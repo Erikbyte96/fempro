@@ -22,6 +22,7 @@
         @endif
     </head>
     <body>
+        <div class="overlay"></div>
         <header>
             <div class="">
                 <div class="wrapper-nav">
@@ -32,6 +33,11 @@
                                 <img class="rectangle-logo" src="{{ asset('images/rectanglelogo.png') }}" alt="Hero kép">
                             </div>
                         </div>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <div class="item-second">
                         <div class="right-tab">
@@ -50,13 +56,29 @@
                     
                         <div class="navbar">
                             <ul>
+                                <li><a href="#about">Rólunk</a></li>
+                                <li><a href="#division">Iparági divíziók</a></li>
+                                <li><a href="#competencies">Kompetenciák</a></li>
+                                <li><a href="#value">Hozzáadott értékünk</a></li>
+                                <li><a href="#contact">Kapcsolat</a></li>
+                            </ul>
+                        </div>
+                        <div class="mobile-menu">
+                            <a href="/"><img class="logo-img" src="{{ asset('images/logo.png') }}" alt="Hero kép"></a>
+                            <div class="mobile-top">
+                                <a>2890 Tata, Bacsó Béla út 37.</a>
+                                <a>+36 70 908 1858</a>
+                                <a>info@femproterv.hu</a>
+                            </div>
+
+                            <ul>
                                 <li><a href="#">Rólunk</a></li>
                                 <li><a href="#">Iparági diviziók</a></li>
                                 <li><a href="#">Kompetenciák</a></li>
                                 <li><a href="#">Hozzáadott értékünk</a></li>
-                                <li><a href="#">Partnereink</a></li>
                                 <li><a href="#">Kapcsolat</a></li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -71,7 +93,7 @@
                 </div>
             </div>
         </section>
-        <section class="introduction">
+        <section id="about" class="introduction">
             <div class="introduction-image">
                 <img src="{{ asset('images/introduction.png') }}" alt="Hero kép">
                 <div class="absolute-label">
@@ -109,7 +131,7 @@
                 </div>
             </div>
         </section>
-        <section class="division">
+        <section id="division" class="division">
             <div class="division-title">Iparági divíziók</div>
             <div class="division-wrapper">
                 <div class="card">
@@ -154,7 +176,7 @@
                 </div>
             </div>
         </section>
-        <section class="competencies">
+        <section id="competencies" class="competencies">
             <div class="competencies-title">Pillérek-Kompetenciáink</div>
             <div class="competencies-text">A FEM-PRO TERV különálló, mégis egymásra épülő divíziók mentén működik.</div>
             <div class="competencies-wrapper">
@@ -227,7 +249,7 @@
             <div class="text"><span>MIÉRT VELÜNK - HOZZÁADOTT ÉRTÉKÜNK</span> <br></br>A FEM-PRO TERV működését tudatosan úgy alakítottuk ki, hogy a hatékonyságot lassító, felesleges belső folyamatokat 
                                 eleve nem építettük be a rendszereinkbe. </div>
         </section>
-        <section class="info">
+        <section id="value" class="info">
             <div class="box">
                 <img src="{{ asset('images/icon1.png') }}" alt="Hero kép"> 
                 <div class="text">Az alapanyag kereskedelemben célzottan nem tartunk fenn raktárkészletet, az alapanyag hazai vagy nemzetközi forrásból közvetlenül a felhasználás helyére érkezik, ezzel időt és költséget optimalizálva. További ide sorolható előnyünk, hogy 

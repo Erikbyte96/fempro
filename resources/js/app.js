@@ -201,3 +201,21 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(infoSection);
 
 });
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".mobile-menu");
+const overlay = document.querySelector(".overlay");
+
+function toggleMenu(){
+
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+    overlay.classList.toggle("active");
+
+    document.body.classList.toggle("menu-open");
+
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+overlay.addEventListener("click", toggleMenu);
