@@ -7,6 +7,7 @@ use App\Models\Setting;
 use App\Models\Hero;
 use App\Models\Division;
 use App\Models\Competency;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
 
@@ -44,3 +45,6 @@ Route::get('/language/{locale}', function ($locale) {
     return redirect()->back();
 
 });
+
+Route::get('/kapcsolat', [ContactController::class, 'index'])
+    ->name('contact');

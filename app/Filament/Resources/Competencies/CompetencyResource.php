@@ -21,10 +21,9 @@ class CompetencyResource extends Resource
 {
     protected static ?string $model = Competency::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedAcademicCap;
 
     protected static ?string $recordTitleAttribute = 'label_hu';
-
 
     protected static ?string $navigationLabel = 'Kompetenciák';
 

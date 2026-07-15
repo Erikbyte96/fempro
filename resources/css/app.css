@@ -59,6 +59,12 @@ header {
     color: #fff;
     width: 100%;
     height: 58px;
+    text-align: right;
+    padding-right: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
 }
 
 .hero .background img {
@@ -83,6 +89,11 @@ header {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #61615d;
 }
 
 .item-second {
@@ -707,6 +718,16 @@ footer {
     position: relative;
 }
 
+.footer-ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-ul li a:hover {
+    color: #61615d;
+}
+
 .footer-ul li::before {
     content: "//";
     color: rgb(93, 107, 72);
@@ -867,6 +888,24 @@ footer {
     }
 }
 
+@media screen and (max-width: 1800px) {
+    .social-bar {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .top-bar {
+        padding-left: 54px;
+    }
+
+    .social-bar {
+        width: 9%;
+    }
+}
+
+
 @media screen and (max-width: 992px) {
 
     .wrapper-nav {
@@ -889,7 +928,7 @@ footer {
     }
 
     .hero .background img {
-        height: 275px;
+        height: 330px;
         width: 100%;
     }
 
@@ -1195,7 +1234,7 @@ footer {
     cursor:pointer;
     z-index:1001;
     right: 25px;
-    top: 22px;
+    top: 33px;
 }
 
 .hamburger span{
@@ -1276,7 +1315,7 @@ footer {
 
 }
 
-@media(max-width:992px){
+@media(max-width: 1200px){
 
     .navbar,
     .right-tab{
@@ -1324,4 +1363,182 @@ body.menu-open{
 
 .mobile-menu img {
     margin-bottom: 24px;
+}
+
+.top-bar-svg span {
+    border-radius: 50%;
+    background-color: #3c3c34;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+.top-bar-svg {
+    margin-top: 18px;
+    display: inline-block;
+    border-right: 1px solid #686868;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #3c3c34;
+}
+
+.top-bar-svg:last-child {
+    border-right: 0 !important;
+}
+
+.top-bar-svg svg {
+    font-size: 16px;
+    height: 16px;
+    fill: #878787;
+}
+
+.top-bar-svg.lang-svg {
+    border-right: 0;
+    background-color: #5d6b48;
+    border-radius: 50%;
+    padding: 0;
+    width: 30px;
+    height: 30px !important;
+    text-align: center;
+    line-height: 2.2;
+    margin-top: 0;
+}
+
+.top-bar-svg.lang {
+    background-color: #61615d;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 0;
+    margin-left: 6px;
+}
+
+.text-span {
+    color: #fffb;
+    background-color: #878787 !important;
+}
+
+.top-bar-svg-last {
+    border-right: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.text-wrapper .google-text {
+    font-size: 24px;
+    color: #3c3c34;
+    text-align: justify;
+}
+
+.text-wrapper {
+    padding: 0 80px;
+}
+
+.contact-information-wrapper {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.contact-information {
+    width: calc(50% - 15px);
+    display: flex;
+    align-items: center;
+}
+
+.contact-information .contact-map {
+    color: #3c3c34;
+    font-size: 24px;
+    padding-left: 16px;
+}
+
+.contact-information .contact-svg {
+    font-size: 10px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #5d6b48;
+    text-align: center;
+}
+
+.contact-information .contact-svg svg {
+    width: 26px;
+    height: 26px;
+    line-height: 1.4;
+    margin-top: 4px;
+    fill: #fff;
+}
+
+.car-map-wrapper {
+    margin: 0 auto;
+    display: block;
+    padding-top: 40px;
+}
+
+.car-map {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #5d6b47;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 40px;
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.car-map:hover {
+    background-color: #3b3b33;
+}
+
+.car-map img {
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .wrapper {
+        flex-direction:  column;
+    }
+
+    .image-map {
+        width: 100%;
+    }
+
+    .image-map img {
+        width: 100%;
+    }
+
+    .text-wrapper {
+        padding: 0;
+        width: 100%;
+    }
+
+    .text-wrapper .google-text {
+        margin: 20px 20px;
+    }
+
+    .contact-information-wrapper {
+        padding-top: 30px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .contact-information {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
 }

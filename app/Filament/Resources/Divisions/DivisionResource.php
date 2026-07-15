@@ -22,7 +22,9 @@ class DivisionResource extends Resource
 {
     protected static ?string $model = Division::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedBuildingOffice2;
+
+    protected static ?string $navigationLabel = 'Divíziók';
 
     protected static ?string $recordTitleAttribute = 'title_hu';
 
